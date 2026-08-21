@@ -1,4 +1,4 @@
-# Exposing
+# AxSense
 
 WiFi CSI human activity recognition, end to end: raw CSI to Doppler spectrograms, model training, device-aware pruning, and few-shot fine-tuning on the target device.
 
