@@ -1,14 +1,14 @@
-## Title of the paper. 
-# WiLight: Toward Lightweight and Embedded WiFi Sensing: Phase-Robust CSI Modeling for Human Activity Recognition
+## WiLight. 
+### Enabling real-time activity recognition across heterogeneous computing platforms 
 
 ## 📥 Dataset
-Download our dataset from the below link. 
+Download our in-house dataset from the below link. 
 
-🔗 **[WiLight Dataset](https://doi.org/10.5281/zenodo.11551205)**  
+🔗 **[HeadSense](https://doi.org/10.5281/zenodo.11551205)**  
 
 Download  Exposing the CSI dataset from the below link. 
 
-🔗 **[Ax_Sense Dataset](https://github.com/ansresearch/exposing-the-csi)**  
+🔗 **[AxSense Dataset](https://github.com/ansresearch/exposing-the-csi)**  
 
 Download  SimWiSense dataset from the below link. 
 
@@ -16,53 +16,35 @@ Download  SimWiSense dataset from the below link.
 
 Download  SHARPac dataset from the below link. 
 
-🔗 **[SHARPac Dataset](https://github.com/francescamen/SHARP)**
+🔗 **[SHARPAC Dataset](https://github.com/francescamen/SHARP)**
 
+## How to Use
+Navigate to the corresponding dataset folder to implement and evaluate WiLight on that dataset.
 
-## 📂 Folder Structure
-Maintain the folder structure like this 
-```
-WiLight/
-├─ input_data/                                    
-├─ Python_code/
-│  ├─ Preprocessed/S1/
-│  ├─ created_training_pruning.py
-│  ├─ fine_tune_testing.py.py
-│  └─ preprocessing_double_ratio_computation.py
-|  └─ visualization.py
-├─ TCN/
-├─ requirements.txt
-└─ README.md
-```
+## Python and relevant libraries version
+Python 3.10+
 
-## Prepare the Dataset
-1. Download the dataset the above link
-2. Preprocess the dataset and obtain the raw CSI data and delete the Pilot and Null subcarrier. 
-3. Store the Raw CSI data files into ''/input_data'' using foler structure of the original dataset. 
+torch	2.3.1 (+cu121 build — CUDA 12.1)
 
-## Preproces the Dataset
-- After preparing the dataset create the ''/preprocessed'' folder inside the ''/Python_code'' folder and run the following script
-```bash
-python /Python_code/preprocessing_double_ratio_computation.py
-```
-- Note: Chnage the path of the input data files as per folder structure
----
+torchvision	0.18.1 (+cu121)
 
-## Initial Training and Pruning of the TCN model
-```bash
-python /Python_code/created_training_pruning.py
-```
+numpy	1.26.0
 
-## Fine-tunning and Testing the TCN model
+scipy	1.14.1
 
-```bash
-python /Python_code/fine_tune_testing.py
-```
+pandas	2.0.3
 
-## Visualization of the Phase Double Ratio (PDR)
-```bash
-python /Python_code/visualization.py
-```
+scikit-learn	1.3.0
 
+matplotlib	3.7.2
+
+seaborn	0.12.2
+
+psutil	5.9.0
+
+tqdm	4.66.2
+
+## Contact 
+Vijay Singh https://vijay13feb.github.io/index.html
 
 
