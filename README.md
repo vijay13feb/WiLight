@@ -2,7 +2,7 @@
 # WiLight: Toward Lightweight and Embedded WiFi Sensing: Phase-Robust CSI Modeling for Human Activity Recognition
 
 ## 📥 Dataset
-Download our dataset from the below link. 
+Download our in-house dataset from the below link. 
 
 🔗 **[HeadSense](https://doi.org/10.5281/zenodo.11551205)**  
 
